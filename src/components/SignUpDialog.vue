@@ -73,7 +73,7 @@
               class="self-end w-44 bg-mulberry text-white py-2"
               label="Signup"
               unelevated
-              @click="onClick"
+              @click="login"
             />
           </div>
         </div>
@@ -90,6 +90,7 @@
               icon="facebook"
               no-caps
               label="Sign in with Facebook"
+              @click="login"
             />
             <q-btn
               class="max-w-xxs"
@@ -98,6 +99,7 @@
               icon="ion-logo-google"
               no-caps
               label="Sign in with Google"
+              @click="login"
             />
           </div>
         </div>
@@ -106,13 +108,16 @@
   </q-dialog>
 </template>
 
-<script>
+<script lang="ts">
 import { defineComponent, ref } from 'vue'
+import { useRouter } from 'vue-router'
 
 export default defineComponent({
   name: 'SignUpDialog',
   emits: ['login', 'close'],
   setup() {
+    const router = useRouter()
+
     const signup = ref({
       fname: '',
       lname: '',
@@ -122,8 +127,14 @@ export default defineComponent({
       rpass: ''
     })
 
+    const login = async () => {
+      localStorage.setItem('token', 'faketoken')
+      await router.replace('/l/')
+    }
+
     return {
-      signup
+      signup,
+      login
     }
   }
 })

@@ -25,7 +25,7 @@
         <template v-if="showSuggestions">
           <!-- Suggerstions Desktop -->
           <ProfileCard
-            v-for="(profile, index) in profiles"
+            v-for="(profile, index) in profiles.slice(0, 5)"
             :key="index"
             :profile="profile"
             class="desktop-only"

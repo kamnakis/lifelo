@@ -28,5 +28,11 @@ export const profiles = [
     fullName: 'Connor Keating',
     profileImage: 'images/man4.jfif',
     description: 'Student - Law'
+  },
+  {
+    id: 'me',
+    fullName: 'Thomas Ryan',
+    profileImage: 'https://cdn.quasar.dev/img/avatar4.jpg',
+    description: 'Student - Law'
   }
 ]
