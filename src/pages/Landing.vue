@@ -186,13 +186,13 @@ export default defineComponent({
 
 <style>
 .waves {
-  background-image: url(../assets/waves.svg);
+  background-image: url('/images/waves.svg');
   background-repeat: no-repeat;
 }
 
 .waves-white-bg {
   background-color: white;
-  background-image: url(../assets/waves.svg);
+  background-image: url('/images/waves.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }

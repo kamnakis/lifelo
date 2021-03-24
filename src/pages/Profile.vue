@@ -20,11 +20,11 @@
     </div>
 
     <div class="w-full h-64 mt-32">
-      <div class="container mx-auto grid grid-cols-2 gap-10 px-20">
+      <div class="container mx-auto grid lg:grid-cols-2 gap-10 px-2 lg:px-20">
         <div class="flex flex-col">
           <h1 class="text-xl font-bold text-ship-gray-800">{{ profile && profile.fullName}}</h1>
           <h1 class="text-base font-normal text-ship-gray-400">Laurea University of Applied Sciences</h1>
-          <h1 class="text-base font-normal text-ship-gray-400 mt-6 w-80">
+          <h1 class="text-base font-normal text-ship-gray-400 mt-6 lg:w-80">
             I am passionate about digital marketing and graphic design. I love applying my creativity in everything I do.
           </h1>
           <q-list class="mt-10">
