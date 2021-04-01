@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="w-full h-64 mt-32">
+    <div class="w-full mt-32 pb-20">
       <div class="container mx-auto grid lg:grid-cols-2 gap-10 px-2 lg:px-20">
         <div class="flex flex-col">
           <h1 class="text-xl font-bold text-ship-gray-800">{{ profile && profile.fullName}}</h1>
@@ -65,7 +65,6 @@
         </div>
       </div>
     </div>
-    
   </div>
 </template>
 

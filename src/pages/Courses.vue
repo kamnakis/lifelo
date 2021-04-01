@@ -55,6 +55,9 @@
             <h4 class="text-ship-gray font-medium text-sm">
               Enrollment Period: {{ course.period }}
             </h4>
+            <h4 class="text-ship-gray-400 font-normal text-xs mt-2">
+              {{ course.school }}
+            </h4>
           </div>
           <div class="w-full grid grid-cols-2 gap-4 mt-10">
             <q-btn
@@ -99,37 +102,44 @@ export default defineComponent({
       {
         title: 'Profitable Business',
         period: '20/09 - 27/09',
-        categories: ['Business']
+        categories: ['Business'],
+        school: 'Turku University of Applied Sciences'
       },
       {
         title: 'Business Processes',
         period: '23/09 - 28/09',
-        categories: ['Business']
+        categories: ['Business'],
+        school: 'Tampere University of Applied Sciences'
       },
       {
         title: 'Supply Chain Management',
         period: '01/10 - 01/11',
-        categories: ['Business']
+        categories: ['Business'],
+        school: 'Jyväskylä University of Applied Sciences'
       },
       {
         title: 'Professional Communications',
         period: '15/09 - 15/10',
-        categories: ['Business']
+        categories: ['Business'],
+        school: 'Laurea University of Applied Sciences'
       },
       {
         title: 'C Programming',
         period: '12/09 - 15/10',
-        categories: ['Engineering']
+        categories: ['Engineering'],
+        school: 'Turku University of Applied Sciences'
       },
       {
         title: 'Data Science',
         period: '11/09 - 13/10',
-        categories: ['Engineering']
+        categories: ['Engineering'],
+        school: 'Metropolia University of Applied Sciences'
       },
       {
         title: 'Algorithms',
         period: '06/09 - 14/10',
-        categories: ['Engineering']
+        categories: ['Engineering'],
+        school: 'Turku University of Applied Sciences'
       }
     ])
 

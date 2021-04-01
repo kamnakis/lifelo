@@ -28,7 +28,7 @@
 
     <q-page-container class="flex flex-col items-center px-4 sm:text-center">
       <h1 class="text-3xl text-ship-gray font-extrabold mt-20">
-        LAUERA STUDENT AND ALUMNI CERTIFICATION PLATFORM 📚
+        A GREAT PLACE TO BE 📚
       </h1>
 
       <q-btn
@@ -38,6 +38,25 @@
         label="EXPLORE LIFELO"
         @click="signUpDialog = !signUpDialog"
       />
+
+      <!-- Info -->
+      <section class="container mt-20 flex justify-evenly space-y-4 md:space-y-0">
+        <article
+          v-for="(item, index) in info"
+          :key="index"
+          class="flex flex-col items-center max-w-xxs h-80 p-6 bg-white shadow-s3 rounded-xl"
+        >
+          <div class="w-full h-1/2 flex justify-center">
+            <q-icon :name="item.icon" size="5rem" class="text-mulberry" />
+            <h2 class="w-full text-center text-lg font-bold text-ship-gray mt-4">
+              {{ item.title }}
+            </h2>
+          </div>
+          <p class="text-base leading-7 font-normal text-ship-gray mt-8">
+            {{ item.body }}
+          </p>
+        </article>
+      </section>
 
       <!-- Feedback -->
       <section
@@ -62,25 +81,6 @@
               {{ item.name }}
             </h5>
           </div>
-        </article>
-      </section>
-
-      <!-- Info -->
-      <section class="container mt-20 flex justify-evenly space-y-4 md:space-y-0">
-        <article
-          v-for="(item, index) in info"
-          :key="index"
-          class="flex flex-col items-center max-w-xxs h-80 p-6 bg-white shadow-s3 rounded-xl"
-        >
-          <div class="w-full h-1/2 flex justify-center">
-            <q-icon :name="item.icon" size="5rem" class="text-mulberry" />
-            <h2 class="w-full text-center text-lg font-bold text-ship-gray mt-4">
-              {{ item.title }}
-            </h2>
-          </div>
-          <p class="text-base leading-7 font-normal text-ship-gray mt-8">
-            {{ item.body }}
-          </p>
         </article>
       </section>
 

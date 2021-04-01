@@ -62,8 +62,7 @@
             </q-avatar>
             <div class="flex-grow flex flex-col ml-4">
               <span class="font-bold text-ship-gray">George Smith</span>
-              <span class="font-medium text-sm text-ship-gray"
-                >Business Professor</span
+              <span class="font-medium text-sm text-ship-gray">Business Professor</span
               >
             </div>
             <q-radio v-model="radio" val="2" color="mulberry" />
@@ -175,14 +174,16 @@ export default defineComponent({
         if (percentage === 100) {
           clearInterval(interval)
 
-          dialog.update({
-            title: 'Done!',
-            message: 'Meeting arranged successfully!',
-            progress: false,
-            ok: true
-          }).onOk(async () => {
-            await router.push('/l/')
-          })
+          dialog
+            .update({
+              title: 'Done!',
+              message: 'Meeting arranged successfully!',
+              progress: false,
+              ok: true
+            })
+            .onOk(async () => {
+              await router.push('/l/')
+            })
         }
       }, 500)
     }

@@ -53,7 +53,7 @@
               exact
               :ripple="false"
               icon="volunteer_activism"
-              label="Guidance"
+              label="Coaching"
             />
             <q-route-tab
               to="/l"
@@ -143,7 +143,7 @@
           exact
           :ripple="false"
           icon="volunteer_activism"
-          label="Guidance"
+          label="Coaching"
           content-class="w-full flex items-center justify-start"
         />
         <q-route-tab
